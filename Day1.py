@@ -1,7 +1,7 @@
 import numpy as np
 # AoC Day 1 - Part 1
 
-file1 = open("input1a.txt", "r")
+file1 = open("input1.txt", "r")
 depth_list = []
 for line in file1:
     depth_list.append(int(line))
@@ -29,9 +29,10 @@ def inc_or_dec(num_list: list):
           f"Number of decreases: {dec}\n")
 
 
+print("--- Part 1a ---")
 inc_or_dec(depth_list)
 
-# Part 1b
+# Part 2
 dep_len = len(depth_list)
 win_stop = dep_len - 2  # Because a three-measurement sliding window has 2 less than the total numbers.
 a, b, c = 0, 1, 2
@@ -43,4 +44,5 @@ for i in range(0, win_stop):
     b += 1
     c += 1
 
+print("--- Part 1b ---")
 inc_or_dec(win_sum)
