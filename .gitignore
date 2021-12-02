@@ -142,4 +142,4 @@ cython_debug/
 .idea
 
 # any txt files within the project
-src/*.txt
+
