@@ -1,5 +1,5 @@
 import numpy as np
-# AoC Day 5 - Part 1
+# AoC Day 6 - Part 1
 
 file1 = open("input6.txt", "r")
 nums = []
@@ -24,6 +24,7 @@ while days > 0:
 print(f"--- Part 1a ---\n"
       f"The total number of lanternfish is: {len(res)}\n")
 
+# --- Part 2 ---
 g = np.zeros(9)
 # Counting original frequency
 for n in nums:
